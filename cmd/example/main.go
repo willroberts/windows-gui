@@ -7,14 +7,15 @@ import (
 	decl "github.com/lxn/walk/declarative"
 )
 
+// Note: Instead of running this with go run, compile with Makefile.
 func main() {
 	var inTE, outTE *walk.TextEdit
 
 	decl.MainWindow{
 		Title: "Capitalizer",
 		MinSize: decl.Size{
-			Width:  600,
-			Height: 400,
+			Width:  320,
+			Height: 240,
 		},
 		Layout: decl.VBox{},
 		Children: []decl.Widget{
